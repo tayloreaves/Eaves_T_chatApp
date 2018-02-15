@@ -23,4 +23,4 @@ Node, NPM, socket.io, JSON, Express and Grunt are used throughout this assignmen
 
 ### Who do I talk to? ###
 
-Feel free to contact myself if you have any questions, comments or concerns.
+Feel free to contact myself, Taylor Eaves if you have any questions, comments or concerns.
