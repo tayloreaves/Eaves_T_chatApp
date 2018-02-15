@@ -6,17 +6,17 @@ This README is for Taylor Eaves' Chat App homework assignment for Multimedia Aut
 
 ### What is this repository for? ###
 
-This is the source for the chat appplication, which will be integrated in a video application later in the semester .
+This is the source for the chat appplication, which will be integrated in a video application later in the semester.
 
 ---
 
-### Overview of the assignment? ###
+### Overview of the assignment ###
 
 The goal of this assignment is to create an interactive chat application using node, express and socket.io. Using HTML and CSS, I have designed a skin, incorporated a transition and included a notification message when a user joins or leaves the chat application.
 
 ---
 
-### What applications are used? ###
+### Applications used ###
 Node, NPM, socket.io, JSON, Express and Grunt are used throughout this assignment.
 
 ---
