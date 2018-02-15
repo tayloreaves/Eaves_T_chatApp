@@ -19,12 +19,21 @@ io.attach(server);
 
 io.on('connection', socket => {
   //console.log('a user has connected!')
+  
+function sendTimeMessage(socket) {
+  var now = new Date();
+
+  var timestamp = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+
+  socket.emit('notification', {'message': timestamp});
+
+ }
 
   io.emit('chat message', { for : 'everyone', message : `A new user has entered the chat`});
 
   socket.on('chat message', msg => {
     io.emit('chat message', { for : 'everyone', message : msg});
-    socket.broadcast.emit('chat message', msg); //added this to send the message to all the users who are accessing the same site(localhost)
+    sendTimeMessage(socket);
   });
 
   socket.on('disconnect', () => {
@@ -61,6 +70,7 @@ io.on('connection', socket => {
 //   console.log('listening on port 3000');
 // });
 //
+//TRIED TO INCORPORATE ROOMS HERE but... FAILED
 // // // rooms which are currently available in chat
 // // var rooms = ['room1','room2','room3'];
 //
